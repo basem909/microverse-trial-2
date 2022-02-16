@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <title>Microver Survey Form</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
-    <h1>Hello World,we are software developers</h1>
+    <h1 id="title" class="title">Microverse Survey Form</h1>
+    <p id="description" class="description">Let us know you a little bit more</p>
+    <form id="survey-form" action="" class="form-container">
+      <label for="name" id="name-label">name</label>
+      <input type="text" id="name" placeholder="Maria" required/>
+      <label for="email" id="email-label">email</label>
+      <input id="email" required placeholder="example@email.co"/>
+      <label for="age">phone number</label>
+      <input type="number" id="age" placeholder="+58 252 16 43" required max="40" min="16"/>
+      <label for="dropDown">Wich role best suits you?</label>
+      <select name="role" id="dropDown">
+        <option value="frontEnd">Fron End</option>
+        <option value="backEnd">Back End</option>
+        <option value="dataAnalyst">Data Analyst</option>
+        <option value="devOps">Dev Ops</option>
+      </select>
+      <p>What's your favorite language?</p>
+      <label for="Python">Python</label>
+      <input type="radio" name="language" id="python">
+      <label for="Java">Java</label>
+      <input type="radio" name="language" id="java">
+      <label for="Ruby">Ruby</label>
+      <input type="radio" name="language" id="ruby">
+      <label for="C++">C++</label>
+      <input type="radio" name="language" id="c++">
+      <p>What other language would you like to learn?</p>
+      <label for="javascript">Java Script</label>
+      <input type="checkbox" value="javascript" name="javascript" id="javascript">
+      <label for="python">Phyton</label>
+      <input type="checkbox" value="python" name="python" id="python">
+      <label for="java">Java</label>
+      <input type="checkbox" value="java" name="java" id="java">
+      <label for="ruby">Ruby</label>
+      <input type="checkbox" value="ruby" name="ruby" id="ruby">
+      <label for="comments">If you like to send us a comment feel free to do it</label>
+      <textarea name="comments" id="comments"></textarea>
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
+
