@@ -9,12 +9,18 @@
     <h1 id="title" class="title">Microverse Survey Form</h1>
     <p id="description" class="description">Let us know you a little bit more</p>
     <form id="survey-form" action="" class="form-container">
-      <label for="name" id="name-label">name</label>
-      <input type="text" id="name" placeholder="Maria" required/>
-      <label for="email" id="email-label">email</label>
-      <input id="email" required placeholder="example@email.co"/>
-      <label for="age">phone number</label>
-      <input type="number" id="age" placeholder="+58 252 16 43" required max="40" min="16"/>
+      <div>
+        <label for="name" id="name-label">name</label>
+        <input type="text" id="name" placeholder="Maria" required/>
+      </div>
+      <div>
+        <label for="email" id="email-label">email</label>
+        <input id="email" required placeholder="example@email.co"/>
+      </div>
+      <div>
+        <label for="age">phone number</label>
+        <input type="number" id="age" placeholder="+58 252 16 43" required max="40" min="16"/>
+      </div>
       <label for="dropDown">Wich role best suits you?</label>
       <select name="role" id="dropDown" >
         <option value="frontEnd">Fron End</option>
@@ -22,25 +28,41 @@
         <option value="dataAnalyst">Data Analyst</option>
         <option value="devOps">Dev Ops</option>
       </select>
-      <p>What's your favorite language?</p>
-      <label for="Python">Python</label>
-      <input type="radio" name="language" id="python">
-      <label for="Java">Java</label>
-      <input type="radio" name="language" id="java">
-      <label for="Ruby">Ruby</label>
-      <input type="radio" name="language" id="ruby">
-      <label for="C++">C++</label>
-      <input type="radio" name="language" id="c++">
-      <p>What other language would you like to learn?</p>
-      <label for="javascript">Java Script</label>
-      <input type="checkbox" value="javascript" name="javascript" id="javascript">
-      <label for="python">Phyton</label>
-      <input type="checkbox" value="python" name="python" id="python">
-      <label for="java">Java</label>
-      <input type="checkbox" value="java" name="java" id="java">
-      <label for="ruby">Ruby</label>
-      <input type="checkbox" value="ruby" name="ruby" id="ruby">
-      <label for="comments">If you like to send us a comment feel free to do it</label>
+      <p class="subtitles">What's your favorite language?</p>
+      <div>
+        <label for="Python">Python</label>
+        <input type="radio" name="language" id="python">
+      </div>
+      <div>
+        <label for="Java">Java</label>
+        <input type="radio" name="language" id="java">
+      </div>
+      <div>
+        <label for="Ruby">Ruby</label>
+        <input type="radio" name="language" id="ruby">
+      </div>
+      <div>
+        <label for="C++">C++</label>
+        <input type="radio" name="language" id="c++">
+      </div>
+      <p class="subtitles">What other language would you like to learn?</p>
+      <div>
+        <label for="javascript">Java Script</label>
+        <input type="checkbox" value="javascript" name="javascript" id="javascript">
+      </div>
+      <div>
+        <label for="python">Phyton</label>
+        <input type="checkbox" value="python" name="python" id="python">
+      </div>
+      <div>
+        <label for="java">Java</label>
+        <input type="checkbox" value="java" name="java" id="java">
+      </div>
+      <div>
+        <label for="ruby">Ruby</label>
+        <input type="checkbox" value="ruby" name="ruby" id="ruby">
+      </div>
+      <p for="comments" class="subtitles">If you like to send us a comment feel free to do it</p>
       <textarea name="comments" id="comments"></textarea>
       <button type="submit">Submit</button>
     </form>
