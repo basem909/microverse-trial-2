@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #4529cb;
+
+}
+.title{
+    margin: center auto;
+    text-align: center;
+    font-size: 35px;
+
+
+}
+.description{
+    text-align: center;
+    font-size: 20px;
+}
+.form-container{
+    display: flex;
+}
